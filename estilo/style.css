@@ -1,0 +1,118 @@
+@charset "UTF8";
+
+
+@font-face {
+    font-family: 'copa1';
+    src: url('../fonte/Qatar2022Arabic-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'copa2';
+    src: url('../fonte/Qatar2022Arabic-Heavy.ttf') format('truetype');
+}
+
+:root{
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+    --fonte-texto: 'copa1', arial, sans-serif;
+    --fonte-destaque: 'copa2', arial, sans-serif;
+
+    --cor00: rgba(160, 12, 54, 0.233);
+    --cor0: rgb(158, 12, 54);
+    --cor1: rgb(124, 7, 39);
+    --cor2: rgb(96, 3, 30);
+    --cor3: rgb(65, 1, 20);
+    --cor4: rgb(43, 0, 12);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor00);
+}
+
+header {
+    background-color: var(--cor4);
+    color: white;
+    font-family: var(--fonte-texto);
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4em;
+    padding-top: 30px;
+}
+
+header nav {
+    text-align: left;
+}
+
+nav a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    background-color: var(--cor0);
+    transition-duration: 0.5s;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+
+
+
+.caixa {
+    padding-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 5px;
+    column-gap: 10px;
+    padding: 20px;
+
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 0px 0px 8px 8px;
+    width: 280px;
+}
+
+section p {
+   font-size: 1.2em;
+   
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p > a {
+    text-decoration: none;
+}
