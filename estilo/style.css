@@ -30,6 +30,7 @@
 }
 
 table {
+    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     margin: auto;
 }
@@ -42,8 +43,8 @@ caption {
 }
 
 th {
-    background-color: lightgray;
-    color: black;
+    background-color: var(--cor0);
+    color: white;
     border: 1px solid black;
     width: 20px;
     padding: 5px;
@@ -86,12 +87,12 @@ header h1 {
     text-align: center;
     font-size: 3.5em;
     padding-top: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.541);
 }
 
 header nav {
     text-align: left;
 
-    
 }
 
 nav a {
@@ -118,6 +119,7 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.39);
 }
 
 main h2 {
@@ -144,6 +146,7 @@ article p {
 }
 
 article p > a {
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
@@ -181,6 +184,8 @@ footer {
 
 footer p > a {
     text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 
 footer p > a:hover {
