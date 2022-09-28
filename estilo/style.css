@@ -29,34 +29,79 @@
     padding: 0px;
 }
 
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: lightgray;
+    color: black;
+    border: 1px solid black;
+    width: 20px;
+    padding: 5px;
+}
+
+td {
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+td img {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.bandeira {
+    width: 180px;
+}
+
+.num {
+    text-align: center;
+}
+
+#borda1, #borda2, #borda3, #borda4 {
+    border-left: 1px solid black;
+}
+
 body {
     background-color: var(--cor00);
 }
 
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor4));    
     color: white;
     font-family: var(--fonte-texto);
+    padding: 10px;
 }
 
 header h1 {
     text-align: center;
-    font-size: 4em;
-    padding-top: 30px;
+    font-size: 3.5em;
+    padding-top: 20px;
 }
 
 header nav {
     text-align: left;
+
+    
 }
 
 nav a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     text-decoration: none;
-    padding-top: 2px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    
 }
 
 nav a:hover {
@@ -70,40 +115,61 @@ main {
     max-width: 800px;
     padding: 20px;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
+main h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    font-weight: lighter;
+    padding: 10px;
+}
 
-
-.caixa {
+main h3 {
+    font-family: var(--fonte-texto);
+    text-align: center;
     padding-top: 50px;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px 15px;
+article {
+    padding-top: 10px;
+}
+
+article p {
+    font-family: var(--fonte-padrao);
+    padding: 10px;
+    text-indent: 30px;
+}
+
+article p > a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+article p > a:hover {
+    text-decoration: underline;
 }
 
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-    row-gap: 5px;
+    flex-wrap: wrap;
     column-gap: 10px;
     padding: 20px;
-
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-radius: 0px 0px 8px 8px;
-    width: 280px;
 }
 
+#a1 {
+    padding-right: 60px;
+}
+
+
 section p {
+    font-family: var(--fonte-texto);
    font-size: 1.2em;
-   
 }
 
 footer {
@@ -115,4 +181,8 @@ footer {
 
 footer p > a {
     text-decoration: none;
+}
+
+footer p > a:hover {
+    text-decoration: underline;
 }
