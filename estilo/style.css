@@ -175,10 +175,6 @@ article p > a:hover {
     padding: 20px;
 }
 
-#a1 {
-    padding-right: 60px;
-}
-
 
 section p {
     font-family: var(--fonte-texto);
@@ -200,4 +196,8 @@ footer p > a {
 
 footer p > a:hover {
     text-decoration: underline;
+}
+
+abbr {
+    text-decoration: none;
 }
